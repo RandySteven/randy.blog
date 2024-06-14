@@ -180,3 +180,20 @@ button:hover {
 #sidenavbar a:hover {
     background-color: #e0e0e0;  /* Change background on hover */
 }
+
+.gallery {
+    text-align: center;  /* Center the gallery title */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Responsive grid columns */
+    grid-gap: 10px;  /* Gap between images */
+    margin: 0 auto;  /* Center the grid horizontally */
+}
+
+.grid-container img {
+    width: 100%;  /* Images fill the width of their grid cell */
+    height: auto;  /* Maintain image aspect ratio */
+    object-fit: cover;  /* Crop images to fit while maintaining aspect ratio */
+}
