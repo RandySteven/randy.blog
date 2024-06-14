@@ -1,0 +1,182 @@
+/* Body and Background */
+body {
+    font-family: Arial, sans-serif; /* Similar to Facebook 2004 font */
+    background-color: #E0EFFF; /* Light blue background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+#header {
+    background-color: #3B5998; /* Dark blue header */
+    color: white;
+    padding: 10px 20px;
+}
+
+#main-content {
+    margin-left: 25%;
+    padding: 10px;
+}
+
+#header h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Content Area */
+#content {
+    margin: 0 auto; /* Center content horizontally */
+    width: 70%; /* Define content width */
+    padding: 20px;
+}
+
+/* Box for Profile and News Feed */
+.box {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px; /* Slight rounded corners */
+}
+
+/* Profile Section */
+.profile {
+    float: left; /* Float profile section to the left */
+    width: 25%;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.profile img {
+    width: 100%; /* Match profile picture width to container */
+    border: 1px solid #ccc;
+}
+
+/* News Feed Section */
+.news-feed {
+    float: right; /* Float news feed section to the right */
+    width: 75%;
+}
+
+/* Status Update Box */
+.status-update {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.status-update textarea {
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 14px;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    padding: 7px; /* Increase padding for a more spacious feel within the textarea */
+    border: 1px solid #ccc; /* Light border */
+    font-size: 14px;
+    resize: vertical; /* Allow users to resize the textarea vertically */
+    border-radius: 0px; /* Slightly rounded corners */
+}
+
+button[type="submit"] {
+    background-color: #3B5998;
+    color: white;
+    padding: 7px 15px; /* Adjust padding to fit content */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #2F4F83; /* Darken button on hover */
+}
+
+button {
+    width: 100%;
+    margin: 16px 0 4px 0;
+}
+
+/* Links and Buttons */
+a {
+    color: #3B5998; /* Use header color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+button {
+    background-color: #3B5998;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2F4F83; /* Darken button on hover */
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+#sidenavbar {
+    position: fixed;  /* Fix the navbar to the side */
+    top: 0;  /* Start at the top */
+    left: 0;  /* Position at left side */
+    width: 200px;  /* Set the width of the navbar */
+    height: 100vh;  /* Set the height to 100% viewport height */
+    background-color: #f1f1f1;  /* Light background color */
+    display: flex;  /* Arrange content vertically */
+    flex-direction: column;  /* Stack elements on top */
+    align-items: center;  /* Center content horizontally */
+}
+
+#sidenavbar img {
+    width: 100%;  /* Make the image fit the navbar width */
+    height: auto;  /* Maintain image aspect ratio */
+    padding: 10px;  /* Add padding around the image */
+}
+
+#sidenavbar ul {
+    list-style: none;  /* Remove default list style */
+    margin: 0;  /* Remove default margin */
+    padding: 0;  /* Remove default padding */
+    width: 100%;  /* Make the list fill the navbar width */
+}
+
+#sidenavbar li {
+    margin: 10px 0;  /* Add space between list items */
+}
+
+#sidenavbar a {
+    text-decoration: none;  /* Remove underline from links */
+    color: black;  /* Set link color */
+    padding: 10px;  /* Add padding to links */
+    display: block;  /* Make links fill the width of the list item */
+}
+
+#sidenavbar a:hover {
+    background-color: #e0e0e0;  /* Change background on hover */
+}

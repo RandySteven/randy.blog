@@ -5,7 +5,7 @@
 
     function get_blogs() {
         global $conn;
-        $query = "SELECT title, content FROM blogs";
+        $query = "SELECT title, content FROM blogs WHERE deleted_at IS NULL";
         $result = pg_query($conn, $query);
         if(!$result) {
             return "failed to get blogs";
@@ -15,29 +15,17 @@
 
     function fetch_blogs() {
         $result = get_blogs();
-        echo "<table>";
         while($row=pg_fetch_assoc($result)){
-            echo "<tr>";
-            echo "<td align='center' width='200'>" . $row['title'] . "</td>";
-            echo "<td align='center' width='200'>" . $row['content'] . "</td>";
-            echo "</tr>";
+            echo "<div class='box'>";
+            echo "<h1>".$row['title']."</h1>";
+            echo "<p id='content'>".$row['content']."</p>";
+            echo "</div>";
         }
-        echo "</table>";
     }
 ?>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jujuman Blog</title>
-</head>
-<body>
-    <h1>Hello Welcome to Aju's blog</h1>
+<?php require_once "./header.php"; ?>
+    <h1 id="header">Aju's blog</h1>
     <?php
         fetch_blogs();
     ?>
-</body>
-</html>
+<?php require "./footer.php"; ?>
