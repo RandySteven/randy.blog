@@ -10,7 +10,6 @@
 </head>
 <body>
 <div id="main-content">
-
 <div>
     <?php require_once "./navbar.php"; ?>
 </div>
