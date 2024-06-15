@@ -5,7 +5,7 @@
 
     function get_blogs() {
         global $conn;
-        $query = "SELECT title, content FROM blogs WHERE deleted_at IS NULL";
+        $query = "SELECT id, title, content FROM blogs WHERE deleted_at IS NULL";
         $result = pg_query($conn, $query);
         if(!$result) {
             return "failed to get blogs";
@@ -16,9 +16,11 @@
     function fetch_blogs() {
         $result = get_blogs();
         while($row=pg_fetch_assoc($result)){
+            $detail = "/detail.php?id=".$row["id"];
             echo "<div class='box'>";
             echo "<h1>".$row['title']."</h1>";
             echo "<p id='content'>".$row['content']."</p>";
+            echo "<a href='".$detail."'>Read More</a>";
             echo "</div>";
         }
     }
