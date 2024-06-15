@@ -8,6 +8,12 @@
     <title>Jujuman Blog</title>
     <link href="style.css" rel="stylesheet">
 </head>
-<body id="main-content">
-<?php require_once "./sidebar.php"; ?>
+<body>
+<div id="main-content">
 
+<div>
+    <?php require_once "./navbar.php"; ?>
+</div>
+<div>
+    <?php require_once "./sidebar.php"; ?>
+</div>
