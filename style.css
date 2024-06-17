@@ -147,7 +147,7 @@ button:hover {
     left: 0;  /* Position at left side */
     width: 200px;  /* Set the width of the navbar */
     height: 100vh;  /* Set the height to 100% viewport height */
-    background-color: #f1f1f1;  /* Light background color */
+    background-color: #3B5998;  /* Light background color */
     display: flex;  /* Arrange content vertically */
     flex-direction: column;  /* Stack elements on top */
     align-items: center;  /* Center content horizontally */
@@ -172,13 +172,13 @@ button:hover {
 
 #sidenavbar a {
     text-decoration: none;  /* Remove underline from links */
-    color: black;  /* Set link color */
+    color: white;
     padding: 10px;  /* Add padding to links */
     display: block;  /* Make links fill the width of the list item */
 }
 
 #sidenavbar a:hover {
-    background-color: #e0e0e0;  /* Change background on hover */
+    background-color: #2F4F83;  /* Change background on hover */
 }
 
 .gallery {

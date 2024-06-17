@@ -3,6 +3,7 @@
     <div>
         <label id="image">Image</label>
         <input type="file" name="image" id="image">
+        <button type="submit" value="Submit">Upload</button>
     </div>
     <?php require_once "./form.php" ;?>
 </form>
