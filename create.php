@@ -9,5 +9,5 @@
     if(!$result) {
         echo pg_last_error();
     }
-    header('Location: form.php');
+    header('Location: insert.php');
 ?>

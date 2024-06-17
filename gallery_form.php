@@ -1,3 +1,9 @@
+<?php require_once './header.php'; ?>
 <form method="POST" action="upload.php" enctype="multipart/form-data" class="box" name="blog-form">
-    <input type="file" name="image" id="image">
+    <div>
+        <label id="image">Image</label>
+        <input type="file" name="image" id="image">
+    </div>
+    <?php require_once "./form.php" ;?>
 </form>
+<?php require_once './footer.php'; ?>
